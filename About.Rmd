@@ -1,0 +1,16 @@
+---
+title: "About"
+output: html_notebook
+---
+
+<!-- Rscripts used to make this R Shiny web application are available on [Github](https://github.com/alsnhll/SEIR_COVID19). -->
+
+The model used in this app was originally developed by [Dr Konstantin Blyuss](http://users.sussex.ac.uk/~kb275) and [Dr Yuliya Kyrychko](http://users.sussex.ac.uk/~yk97), who you can contact with questions at <k.blyuss@sussex.ac.uk> (K.B. Blyuss) and <y.kyrychko@sussex.ac.uk> (Y.N. Kyrychko). 
+
+This interactive simulation app was developed by:
+
+* [Dr Konstantin Blyuss](http://users.sussex.ac.uk/~kb275) University of Sussex
+* [Dr Yuliya Kyrychko](http://users.sussex.ac.uk/~yk97) University of Sussex
+* [Dr Oleg Blyuss](http://researchprofiles.herts.ac.uk/portal/en/persons/oleg-blyuss\(5cd5974a-4e53-4995-b5ac-103ad15f200a\).html) University of Hertfordshire
+
+We are happy to acknowledge and highly recommend an [RShiny app](https://alhill.shinyapps.io/COVID19seir/) by [Dr Alison Hill](https://twitter.com/alison_l_hill) and her colleagues that was used as a foundation for this simulation tool. We are also grateful to [Dr Thomas Petzoldt](https://wwwpub.zih.tu-dresden.de/~petzoldt/) for his advice with RShiny programming.
