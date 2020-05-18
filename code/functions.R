@@ -517,7 +517,7 @@ SimQuarOpt = function(input){
   K1=pModel$K1
   K2=pModel$K2
   Tmax=pModel$Tmax
-  
+
   t12=sol1[,1]
   N12=length(t12)
   S12=apply(sol1[,2:19], 1, "sum")
@@ -534,8 +534,8 @@ SimQuarOpt = function(input){
   RA12=apply(sol1[,(18*(K1+4*K2+6)+2):(18*(K1+4*K2+7)+1)], 1, "sum")
   RR12=apply(sol1[,(18*(K1+4*K2+7)+2):(18*(K1+4*K2+8)+1)], 1, "sum")
   DD12=apply(sol1[,(18*(K1+4*K2+8)+2):(18*(K1+4*K2+9)+1)], 1, "sum")
-  
-  t22=sol2[,1]+7*pModel$Tstart
+
+  t22=sol2[,1]+pModel$Tstart
   N22=length(t22)
   S22=apply(sol2[,2:9], 1, "sum")
   E22=apply(sol2[,10:(8*(K1+1)+1)], 1, "sum")
@@ -551,8 +551,8 @@ SimQuarOpt = function(input){
   RA22=apply(sol2[,(8*(K1+4*K2+6)+2):(8*(K1+4*K2+7)+1)], 1, "sum")
   RR22=apply(sol2[,(8*(K1+4*K2+7)+2):(8*(K1+4*K2+8)+1)], 1, "sum")
   DD22=apply(sol2[,(8*(K1+4*K2+8)+2):(8*(K1+4*K2+9)+1)], 1, "sum")
-  
-  t32=sol3[,1]+7*pModel$Tfinish
+
+  t32=sol3[,1]+pModel$Tfinish
   N32=length(t32)
   S32=apply(sol3[,2:19], 1, "sum")
   E32=apply(sol3[,20:(18*(K1+1)+1)], 1, "sum")
@@ -569,7 +569,7 @@ SimQuarOpt = function(input){
   RR32=apply(sol3[,(18*(K1+4*K2+7)+2):(18*(K1+4*K2+8)+1)], 1, "sum")
   DD32=apply(sol3[,(18*(K1+4*K2+8)+2):(18*(K1+4*K2+9)+1)], 1, "sum")
   DAges=sol3[N32,(18*(K1+4*K2+8)+2):(18*(K1+4*K2+9)+1)]
-  
+
   t=c(t12[1:(N12-1)],t22[1:(N22-1)],t32)
   S=c(S12[1:(N12-1)],S22[1:(N22-1)],S32)
   E=c(E12[1:(N12-1)],E22[1:(N22-1)],E32)
@@ -585,9 +585,9 @@ SimQuarOpt = function(input){
   RA=c(RA12[1:(N12-1)],RA22[1:(N22-1)],RA32)
   RR=c(RR12[1:(N12-1)],RR22[1:(N22-1)],RR32)
   DD=c(DD12[1:(N12-1)],DD22[1:(N22-1)],DD32)
-  
+
   df=list("t"=t,"S"=S,"E"=E,"A"=A,"IR"=IR,"IH"=IH,"IC"=IC,"HH"=HH,"RH"=RH,"HC"=HC,"CC"=CC,"RC"=RC,"RA"=RA,"RR"=RR,"DD"=DD,"DAges"=DAges)
-  
+
   return(df)
   
 }
