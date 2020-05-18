@@ -3,7 +3,7 @@ title: "About"
 output: html_notebook
 ---
 
-R codes used to produce this R Shiny app are available on [Github](https://https://github.com/kblyuss/UK-COVID-19-tool) 
+R codes used to produce this R Shiny app are available on [Github](https://github.com/kblyuss/UK-COVID-19-tool) 
 
 The model used in this app was originally developed by [Dr Konstantin Blyuss](http://users.sussex.ac.uk/~kb275) and [Dr Yuliya Kyrychko](http://users.sussex.ac.uk/~yk97), who you can contact with questions at <k.blyuss@sussex.ac.uk> (K.B. Blyuss) and <y.kyrychko@sussex.ac.uk> (Y.N. Kyrychko). 
 
